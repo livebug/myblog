@@ -1,0 +1,32 @@
+[[entries]]
+title = "all posts"
+
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "See archive..."
+  show_more_url = "posts"
+
+[[entries]]
+title = "tags"
+url = "tags"
+
+[[entries]]
+title = "categories"
+url = "categories"
+
+[[entries]]
+title = "about"
+
+  [[entries.entries]]
+  title = " use <a href='https://github.com/riggraz/no-style-please'> no-style-please </a> styling <br> a (nearly) no-CSS, fast, minimalist Hugo theme ported from <a href='https://github.com/riggraz/no-style-please'>riggraz/no-style-please</a>."
+
+  [[entries.entries]]
+  title = " author : livebug@163.com <br> github : <a href='https://livebug.github.io'> https://livebug.github.io </a> "
+
+  [[entries.entries]]
+  title = " <code>big data</code> <code>sql</code> <code>.net core</code> <code>etl</code>  "
+
+[[entries]]
+title = "rss"
+url = "index.xml"
