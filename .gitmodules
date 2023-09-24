@@ -1,0 +1,3 @@
+[submodule "content/blogs"]
+	path = content/blogs
+	url = https://github.com/livebug/blogs.git
