@@ -17,15 +17,18 @@ url = "categories"
 
 [[entries]]
 title = "about"
+url = "blogs/about/"
 
   [[entries.entries]]
   title = " use <a href='https://github.com/riggraz/no-style-please'> no-style-please </a> styling <br> a (nearly) no-CSS, fast, minimalist Hugo theme ported from <a href='https://github.com/riggraz/no-style-please'>riggraz/no-style-please</a>."
 
   [[entries.entries]]
-  title = " author : livebug@163.com <br> github : <a href='https://livebug.github.io'> https://livebug.github.io </a> "
+  title = " author : livebug@163.com <br> "
+    [[entries.entries]]
+  title = " 😏 github  : <a href='https://livebug.github.io'> https://livebug.github.io </a> "
 
   [[entries.entries]]
-  title = " <code>big data</code> <code>sql</code> <code>.net core</code> <code>etl</code>  "
+  title = " <code>big data</code> <code>sql</code> <code>.net core</code> <code>etl</code> <code>python</code>  "
 
 [[entries]]
 title = "rss"

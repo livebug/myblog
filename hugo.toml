@@ -8,7 +8,7 @@ theme = 'nostyleplease'
   homepage = "livebug.github.io"
 
 [params]
-  description = "一个数据搬运工的各种浅尝辄止"
-  
+  description = "Good judgement comes from experience, and experience comes from bad judgement. —— Fred Brooks"
+  favicon = "favicon.ico"
   [params.theme_config]
     show_description = true

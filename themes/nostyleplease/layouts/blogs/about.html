@@ -4,11 +4,11 @@
 <article>
     <p class="post-meta">
         <time datetime="{{ .Date }}">
-            {{ .Date | time.Format site.Params.theme_config.date_format }}
+            {{ .Date | time.Format site.Params.theme_config.date_format }} 
         </time>
     </p>
 
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }} For this Site</h1>
 
     {{ if .Params.toc }}
         <aside {{ if .Params.tocBorder }} class="toc" {{ end }}>
@@ -16,6 +16,7 @@
         </aside>
     {{ end }}
 
-    {{ .Content }}
+    {{ .Content }} 
+    
 </article>
 {{ end }}

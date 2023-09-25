@@ -1,3 +1,6 @@
+/* CSS */
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
 // -------------- THEME SWITCHER -------------- //
 @mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color ,$--pre-color) {
   background-color: $--bg-color;
@@ -13,17 +16,24 @@
   }
 
   code:not(pre > code) {
-    background-color: $--primary-text-color;
-    color: $--bg-color;
+    margin: 0 2px;
+    padding: 3px 4px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    background-color: #F6F6F6;
   }
 
   pre {
     background-color: $--pre-color;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    border-radius: 6px;
   }
   pre > code {
     // background-color: $--bg-color;
-    color:  $--bg-color;
-    font-family: 'Courier New', Courier, monospace;
+    color:  $--primary-text-color;
   }
 
   figcaption { color: $--secondary-text-color; }
@@ -34,7 +44,7 @@
 }
 
 @mixin light-appearance {
-  @include theme(#ffffff, #212121, #666666, #1e70bf, #921292, #212121);
+  @include theme(#ffffff, #212121, #666666, #1e70bf, #921292,  rgb(246, 248, 250));
 }
 
 body[a="dark"] { @include dark-appearance; }
@@ -54,12 +64,15 @@ body[a="light"] { @include light-appearance; }
 html { height: 100%; }
 
 body {
-  font-family:'Courier New', Courier, monospace;
-  font-size: 16px;
+  font-family: fira code, -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;  font-size: 16px;
   line-height: 1.4;
   margin: 0;
   min-height: 100%;
   overflow-wrap: break-word;
+}
+
+code {
+  font-family: fira code
 }
 
 .post-meta { text-align: right; }
