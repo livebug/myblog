@@ -20,15 +20,15 @@ title = "about"
 url = "blogs/about/"
 
   [[entries.entries]]
-  title = " use <a href='https://github.com/riggraz/no-style-please'> no-style-please </a> styling <br> a (nearly) no-CSS, fast, minimalist Hugo theme ported from <a href='https://github.com/riggraz/no-style-please'>riggraz/no-style-please</a>."
+  title = " use <a href='https://github.com/riggraz/no-style-please'> <code>no-style-please</code> </a> theme "
 
   [[entries.entries]]
-  title = " author : livebug@163.com <br> "
+  title = " author : livebug@163.com  😏 <br> "
     [[entries.entries]]
-  title = " 😏 github  : <a href='https://livebug.github.io'> https://livebug.github.io </a> "
+  title = " github  : <a href='https://livebug.github.io'> https://livebug.github.io </a> "
 
   [[entries.entries]]
-  title = " <code>big data</code> <code>sql</code> <code>.net core</code> <code>etl</code> <code>python</code>  "
+  title = " <code>big data</code> <code>sql</code> <code>.net core</code> <code>etl</code> <code>python</code>  <code>hive</code>   <code>gauss</code>"
 
 [[entries]]
 title = "rss"
