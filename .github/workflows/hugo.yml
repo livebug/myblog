@@ -50,6 +50,8 @@ jobs:
           echo "${{steps.deployment.outputs.page_url}}/"
           hugo \
             --minify 
+          pwd
+          cd public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
