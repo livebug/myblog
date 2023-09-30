@@ -44,7 +44,7 @@
 }
 
 @mixin light-appearance {
-  @include theme(#F5F5F5, #212121, #666666, #1e70bf, #921292,  rgb(229, 229, 229));
+  @include theme(#eaeaea, #212121, #666666, #1e70bf, #921292,  rgb(229, 229, 229));
 }
 
 body[a="dark"] { @include dark-appearance; }
