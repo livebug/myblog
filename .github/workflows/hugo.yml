@@ -47,10 +47,10 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          echo "${{ steps.pages.outputs.base_url }}/"
+          echo "${{steps.deployment.outputs.page_url}}/"
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{steps.deployment.outputs.page_url}}/"
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
