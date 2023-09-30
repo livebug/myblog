@@ -18,9 +18,9 @@
   code:not(pre > code) {
     margin: 0 2px;
     padding: 3px 4px;
-    border-radius: 3px;
-    font-size: 0.9em;
-    background-color: #F6F6F6;
+    border-radius: 6px;
+    font-size: 0.8em;
+    background-color: #d7d7d7;
   }
 
   pre {
@@ -44,7 +44,7 @@
 }
 
 @mixin light-appearance {
-  @include theme(#ffffff, #212121, #666666, #1e70bf, #921292,  rgb(246, 248, 250));
+  @include theme(#F5F5F5, #212121, #666666, #1e70bf, #921292,  rgb(229, 229, 229));
 }
 
 body[a="dark"] { @include dark-appearance; }
