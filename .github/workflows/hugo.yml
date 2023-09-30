@@ -28,7 +28,7 @@ defaults:
 
 jobs:
   # Build job
-  build:
+  public:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.114.0
@@ -48,14 +48,11 @@ jobs:
           HUGO_ENV: production
         run: |
           echo "${{steps.deployment.outputs.page_url}}/"
-          hugo \
-            --minify 
-          pwd
-          cd public
+          hugo 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # 另外还支持 deploy_token 和 github_token
+          personal_token: ${{ secrets.PERSONAL_TOKEN }} # 另外还支持 deploy_token 和 github_token
           external_repository: livebug/livebug.github.io # 修改为你的 GitHub Pages 仓库
           publish_dir: ./public
           publish_branch: master
