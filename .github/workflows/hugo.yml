@@ -47,7 +47,6 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          echo "${{steps.deployment.outputs.page_url}}/"
           hugo 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
