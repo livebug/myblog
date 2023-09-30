@@ -49,8 +49,7 @@ jobs:
         run: |
           echo "${{steps.deployment.outputs.page_url}}/"
           hugo \
-            --minify \
-            --baseURL "${{steps.deployment.outputs.page_url}}/"
+            --minify 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
