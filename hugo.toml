@@ -5,7 +5,7 @@ theme = 'nostyleplease'
 
 [author]
   name = "livebug"
-  homepage = "livebug.github.io"
+  homepage = "https://livebug.github.io"
 
 [params]
   description = "Good judgement comes from experience, and experience comes from bad judgement. —— Fred Brooks"
