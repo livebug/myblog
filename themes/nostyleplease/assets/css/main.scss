@@ -1,6 +1,25 @@
 /* CSS */
 @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 
+:root {
+  --gap: 24px;
+  --content-gap: 20px;
+  --nav-width: 1024px;
+  --main-width: 720px;
+  --header-height: 60px;
+  --footer-height: 60px;
+  --radius: 8px;
+  --theme: rgb(255, 255, 255);
+  --entry: rgb(255, 255, 255);
+  --primary: rgb(30, 30, 30);
+  --secondary: rgb(108, 108, 108);
+  --tertiary: rgb(214, 214, 214);
+  --content: rgb(31, 31, 31);
+  --hljs-bg: rgb(28, 29, 33);
+  --code-bg: #d7d7d7;
+  --border: rgb(238, 238, 238)
+}
+
 // -------------- THEME SWITCHER -------------- //
 @mixin theme($--bg-color, $--primary-text-color, $--secondary-text-color, $--link-color, $--visited-link-color ,$--pre-color) {
   background-color: $--bg-color;
@@ -24,7 +43,6 @@
   }
 
   pre {
-    background-color: $--pre-color;
     padding: 16px;
     overflow: auto;
     font-size: 85%;
@@ -44,7 +62,7 @@
 }
 
 @mixin light-appearance {
-  @include theme(#eaeaea, #212121, #666666, #1e70bf, #921292,  rgb(229, 229, 229));
+  @include theme(rgb(225, 225, 225), #212121, #666666, #1e70bf, #921292,  rgb(235, 235, 235));
 }
 
 body[a="dark"] { @include dark-appearance; }
@@ -91,7 +109,7 @@ li { margin: 0.4rem 0; }
 *:target { background: yellow; }
 
 .w {
-  max-width: 640px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -107,6 +125,14 @@ hr {
 
   &:before { content: '/////' }
   &:after { content: attr(data-content) '/////' }
+}
+
+.hr-common {
+  border: none;
+  border-top: 1px solid black;
+  margin: auto;
+  &:before { content: none }
+  &:after { content: none }
 }
 
 pre {
@@ -152,4 +178,32 @@ img {
 figcaption {
   text-align: center;
   opacity: 0.5;
+}
+ 
+// --------------- 文章标签  //
+.post-tags{
+  padding-left: 0px !important;
+}
+
+.post-tags li {
+  display: inline-block;
+  margin-inline-end:3px;margin-bottom: 5px
+}
+
+.post-tags a,.share-buttons,.paginav {
+  border-radius: var(--radius);
+  background: var(--code-bg);
+}
+
+.post-tags a {
+  display: block;
+  padding-inline-start:14px;
+  padding-inline-end:14px;
+  color: var(--secondary);
+  font-size: 0.8em;
+  line-height: 24px;
+}
+
+.post-tags a:hover,.paginav a:hover {
+  background: var(--border)
 }

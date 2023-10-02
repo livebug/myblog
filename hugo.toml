@@ -13,7 +13,7 @@ theme = 'nostyleplease'
   [params.theme_config]
     show_description = true
     appearance = "light"
-    back_home_text = "..back"
+    back_home_text = ".. back to home"
     date_format = "2006-01-02"
 
 
