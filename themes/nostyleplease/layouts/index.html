@@ -1,13 +1,18 @@
 {{ define "main" }}
 
-<header>
-    <h1>{{ $.Site.Title }}</h1>
-    <hr class="hr-common" style="margin-bottom: 4rem;">
-    {{ if $.Site.Params.theme_config.show_description }}
+<div class="index-content">
+    <header>
+        <h1 style="padding: 1.5rem 0 ; margin: 0;">{{ $.Site.Title }}</h1>
+        <hr class="hr-common" style="padding-bottom: 4rem;">
+        {{ if $.Site.Params.theme_config.show_description }}
         <p><i>{{ $.Site.Params.description }}</i></p>
-    {{ end }}
-</header>
-{{ .Content }}
-{{ partial "menu_item.html" (dict "context" . "collection" $.Site.Data.menu.entries) }}
+        {{ end }}
+    </header>
+    {{ .Content }}
+    {{ partial "menu_item.html" (dict "context" . "collection" $.Site.Data.menu.entries) }}
 
-{{ end }}
+    <div class="index-footr">© · 2023 · livebug · build by Hugo · theme support by <a
+            href='https://github.com/riggraz/no-style-please'> no-style-please </a>
+    </div>
+
+    {{ end }}
