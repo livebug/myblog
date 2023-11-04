@@ -1,5 +1,5 @@
 
-cd /home/sharif/myblog
+cd /home/sharif/myblogsite-hugo
 post_name=$1
 post_name=`echo $post_name | tr -s ''` # 去除多余空格
 post_name=` echo ${post_name} | sed 's/[ ]/-/g'` # 替换空格为 - 
