@@ -117,7 +117,7 @@ li { margin: 0.4rem 0; }
 
 .index-content
 {
-  height: calc(100vh - 8rem );
+  height: calc(100vh - 8rem ); // 注意，子元素的margin会影响这个的计算
   position: relative; // 用于子元素定位
 }
 .index-footr
