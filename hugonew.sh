@@ -1,4 +1,4 @@
-
+#!/bin/bash
 cd /home/sharif/myblogsite-hugo
 post_name=$1
 post_name=`echo $post_name | tr -s ''` # 去除多余空格
