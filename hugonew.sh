@@ -1,4 +1,5 @@
 #!/bin/bash
+root=`pwd`
 cd /home/sharif/myblogsite-hugo
 post_name=$1
 post_name=`echo $post_name | tr -s ''` # 去除多余空格
@@ -11,3 +12,5 @@ hugo new blogs/${post_name}.md $@
 # 替换文件名
 cd content/blogs/
 mv ${post_name}.md ${date_string}-${post_name}.md
+cd $root 
+code ${date_string}-${post_name}.md
